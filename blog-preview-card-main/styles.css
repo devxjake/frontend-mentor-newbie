@@ -1,15 +1,116 @@
+/* FONTS 
+  Importing Figtree from Google Fonts 
+*/
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
+/* RESET & BASE STYLES 
+*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   font-family: "Figtree", Arial, Helvetica, sans-serif;
+  background-color: #f4d04e;
+  color: #111; /* Set default text color to reduce repetition */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* LAYOUT: CARD CONTAINER 
+*/
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fff;
+  width: 87.2%;
+  max-width: 24rem;
+  padding: 1.5rem;
+  border: 0.0625rem solid #111;
+  border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0 0 #000;
+}
+
+/* Specific styling for the card's main illustration */
+.container > img {
+  border-radius: 0.625rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+p {
+  color: #6b6b6b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* COMPONENTS 
+*/
+
+/* Category Tag/Badge */
+.badge {
+  background: #f4d04e;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.5;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  width: fit-content;
+}
+
+/* Date/Publication Text */
+.publication {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* FOOTER: AUTHOR INFO 
+*/
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-info img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.author-info strong {
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+/* RESPONSIVE STYLES (Desktop and larger) 
+*/
+@media (min-width: 48rem) {
+  .publication {
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
