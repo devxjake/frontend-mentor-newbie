@@ -52,6 +52,7 @@ h1 {
   font-size: 1.25rem;
   font-weight: 800;
   line-height: 1.5;
+  margin-bottom: 0.75rem;
 }
 
 p {
@@ -73,6 +74,7 @@ p {
   padding: 0.25rem 0.75rem;
   border-radius: 0.25rem;
   width: fit-content;
+  margin-bottom: 0.75rem;
 }
 
 /* Date/Publication Text */
