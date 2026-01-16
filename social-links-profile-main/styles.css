@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
 main.container {
@@ -96,4 +97,14 @@ nav ul li a {
   font-weight: 700;
   line-height: 1.3125rem;
   text-decoration: none;
+}
+
+/* ====================
+MEDIA QUERIES
+==================== */
+
+@media (min-width: 48rem) {
+  main.container {
+    padding: 2.5rem;
+  }
 }
