@@ -103,8 +103,26 @@ nav ul li a {
 MEDIA QUERIES
 ==================== */
 
-@media (min-width: 48rem) {
+@media (min-width: 90rem) {
   main.container {
     padding: 2.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  /* ==========
+  NAV
+  ========== */
+  nav ul li {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  nav ul li:hover {
+    background-color: var(--green);
+  }
+
+  nav ul li:hover a {
+    color: var(--grey-700);
   }
 }
