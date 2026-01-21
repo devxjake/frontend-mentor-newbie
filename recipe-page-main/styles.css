@@ -20,6 +20,8 @@
 }
 
 html {
+  height: 100%;
+  margin: 0;
   font-size: 16px;
 }
 
@@ -196,6 +198,7 @@ tr:not(:last-child) {
     width: 80.2083333333%;
     border-radius: 1.5rem;
     padding: 2.5rem;
+    margin: 8rem auto;
   }
 
   /* ===== ARTICLE CONTENT CONTAINER  ===== */
