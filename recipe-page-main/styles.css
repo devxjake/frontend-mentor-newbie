@@ -67,7 +67,11 @@ h2 {
   line-height: 1.75rem;
 }
 
-h3 {
+section.prep-time h2 {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25rem;
   color: var(--rose-800);
   margin-bottom: 1rem;
 }
